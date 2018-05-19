@@ -58,3 +58,9 @@ button on the application.
 ✓ On that emergency message and Facebook status a GPS location send via a Google
 Maps URL, so it will be easier to find out the victims’ current location by pressing the
 link.
+
+
+
+
+
+here I only added the apk file because of it is a confidential project. If you like to collaborate it then mail me at jubayer98@gmail.com
