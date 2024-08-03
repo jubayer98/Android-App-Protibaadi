@@ -1,66 +1,34 @@
-# Android-App-Protibaadi
-Protibaadi, which addresses the issue of women's safety in public places, is a system consisting of a portable device which remotely activates a mobile application. The existing safety apps draw attention and it is risky to bring out cell phones in front of the harasser to seek help. Protibaadi allows the users to carry a hidden device inside a pouch which can either be worn or clipped to the user's bag.
+# Protibaadi Android App
 
+Protibaadi is an innovative Android application designed to enhance women's safety in public places. Unlike traditional safety apps, Protibaadi integrates with a discreet portable device, allowing for emergency alerts without needing to visibly use a smartphone, which can escalate dangerous situations.
 
-What is Protibaadi?
-Protibaadi, which addresses the issue of women's safety in public places, is a system
-consisting of a portable device which remotely activates a mobile application. The existing
-safety apps draw attention and it is risky to bring out cell phones in front of the harasser to
-seek help. Protibaadi allows the users to carry a hidden device inside a pouch which can
-either be worn or clipped to the user's bag.
+## Overview
 
-As a primary step, here we used a HC-05 Bluetooth device with customize integrated circuit.
+**Device and Connection:**
+- The system includes a portable device hidden inside a pouch that can be worn or attached to a bag.
+- It utilizes a **HC-05 Bluetooth module** connected to an Android app to enable remote activation.
 
-The actual circuit contains:
+**Hardware Components:**
+- Small Breadboard
+- 555 Timer
+- HC-05 Bluetooth Module
+- Male to Male Jumper Wires
+- 100nF Capacitor
+- 10K Trimmer Potentiometer
+- A Switch
+- 9V Battery
 
-✓ A Small Breadboard
-✓ 555 Timer
-✓ HC-05 Bluetooth Module
-✓ Male to Male Jumper Wire
-✓ 100nF Capacitor
-✓ 10K Trimmer Potentiometer
-✓ A Switch
-✓ 9V Battery
+## Application Features
 
-Based on hardware requirement we developed an android mobile application via which can help to make a connection between
-this hardware device to android application. Let’s have look at the feature of Protibaadi mobile application.
+- **Database Integration:** Uses SQLite3 for storing and updating emergency contact numbers effortlessly.
+- **Connection Verification:** Confirms the hardware connection and GPS functionality to ensure the system's reliability.
+- **Emergency Messaging:** Upon pressing the hardware device switch, it sends an emergency text to a predefined contact with the user’s current location after a 20-second interval.
+- **Social Media Integration:** Automatically posts an emergency status on the user's Facebook account with location details. This status is updated at set intervals.
+- **User Control:** Allows the user to stop sending messages and posting updates via a stop button in the app.
+- **Location Sharing:** Shares the GPS location through a Google Maps URL, making it easy to locate the user.
 
-Application Features:
+## Usage Scenario
 
-✓ This application has been integrated with SQLite3
-database management system. So, users can easily
-store the emergency phone number with few of taps.
-And anytime users can update emergency phone
-number.
+In a situation where a user feels threatened, they can discreetly press the switch on the Protibaadi device. This action triggers the app to send an emergency SMS and update their Facebook status with their location, helping to alert both personal contacts and broader social networks without escalating the situation by visibly using a phone.
 
-✓ This application ensures the reliability of hardware
-both phone and HC-05 integrated hardware. This can
-help you to ensure the device is successfully
-connected or not with your application and also
-ensures the GPS is enable or not.
-
-✓ Only when you are applicable for send emergency message when the application
-ensures the hardware device is successfully connected.
-Customize Circuit with HC-05 Device
-App Logo
-
-✓ When the hardware device switch is being pressed then a 20 second time interval an
-emergency text will be automatically send to the emergency number with the current
-location of the victim.
-
-✓ Besides, sending emergency messages, an automatic Facebook status will be posted
-from the victim Facebook account along with the current location of the victim. And
-this status also posted a certain time interval.
-
-✓ Victim can stop the sending message and posting Facebook status by clicking stop
-button on the application.
-
-✓ On that emergency message and Facebook status a GPS location send via a Google
-Maps URL, so it will be easier to find out the victims’ current location by pressing the
-link.
-
-
-
-
-
-here I only added the apk file because of it is a confidential project. If you like to collaborate it then mail me at jubayer98@gmail.com
+This app provides a practical solution that empowers users to seek help discreetly in emergencies, leveraging modern technology to enhance personal safety. This concept not only adds an essential layer of security but also uses common digital platforms to ensure a rapid response in critical situations.
